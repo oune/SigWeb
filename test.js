@@ -13,7 +13,9 @@ function review_print(){
 				var price = json_data.list[cnt++].product_price;
 				document.getElementById("review_list").innerHTML +='<li><div class="review_context"><div class="div_r_image"><div><image src="https://shopping-phinf.pstatic.net/main_8747453/8747453599.6.jpg?type=f140" class="review_image" id="thumbnail_image"/></div></div><div class="div_r_content"><div><p class="review_cnt_text">리뷰 갯수</p><p class="review_cnt">'+review_cnt+'건</p><p class="prod_name">'+prod_name+'</p><p class="price">'+price+'</p></div></div></div></li>';
 				var image_width = (window.innerWidth/2)*0.7;
-				document.getElementById("thumbnail_image").width = image_width;
+				document.getElementById("thumbnail_image").style.width = image_width;
+				document.getElementById("thumbnail_image").style.height = image_width;
+				document.getElementById("thumbnail_image").style.maxWidth = 190;
 			}		
      		}
     	})
