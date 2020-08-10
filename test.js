@@ -15,4 +15,6 @@ function review_print(){
 			}		
      		}
     	})
+	var image_width = (window.innerWidth/2)*0.7
+	document.getElementById("")
 }
