@@ -10,6 +10,7 @@ function review_print(){
          		json_data=data;
      		}
     	})
+	console.log(json_data)
 	for (var i=0; i<5; i++){
 		var review_cnt = json_data.list[cnt++].review_cnt;
 		var prod_name = json_data.list[cnt++].product_name;
