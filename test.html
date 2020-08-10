@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	        <!-- 모바일 디바이스를 위한 설정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    		<!-- 폰트 사용-->
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+			<!--css 설정-->
+	<link href="style.css" rel="stylesheet">
+			<!--jQuery 설정-->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+    <script src="./test.js"></script>
+    <script src="./review_file_deform.json"></script>
+	<title>TEST</title>
+</head>
+<body>
+	<div class="div_parents" data-role="page">
+		<div class="main_header">
+			<div class="main_header_title">
+				<p class="header_title">Review</p>
+			</div>
+		</div>
+		<div class="main_body">
+			<ul class="review_list" id="review_list">
+			    <script type="text/javascript">
+    				review_print();
+    			</script>
+			</ul>
+			<div id="more_view">
+				<a onclick="review_print()">
+					<p> 더보기 </p>
+				</a>
+			</div>
+			<div style="width: 100%; height: 80px"/>
+		</div>
+		<div class="main_footer"></div>
+	</div>
+</body>
+</html>
